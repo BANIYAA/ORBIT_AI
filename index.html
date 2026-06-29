@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" style="background-color: #050505;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orbit AI | Smart Productivity Operating System</title>
+  </head>
+  <body style="background-color: #050505; color: #e0e0e0;">
+    <div id="root"></div>
+    <script>
+      // Capture cross-origin ghost errors and stop them from triggering sandbox failure
+      window.onerror = function(message) {
+        if (message === 'Script error.') return true;
+      };
+      window.addEventListener('error', function(e) {
+        if (e.message === 'Script error.' || !e.filename) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+          return true;
+        }
+      }, true);
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

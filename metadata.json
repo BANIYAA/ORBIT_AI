@@ -1,0 +1,6 @@
+{
+  "name": "Orbit AI",
+  "description": "An AI-powered productivity operating system featuring task prioritization, habit tracking, and a smart dashboard with dark UI.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
